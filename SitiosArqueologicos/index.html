@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="qgis2web_2024_05_18-18_48_51_112228/resources/ol.css">
+    <link rel="stylesheet" href="qgis2web_2024_05_18-18_48_51_112228/resources/fontawesome-all.min.css">
+    <link rel="stylesheet" href="qgis2web_2024_05_18-18_48_51_112228/resources/horsey.min.css">
+    <link rel="stylesheet" href="qgis2web_2024_05_18-18_48_51_112228/resources/ol3-search-layer.min.css">
+    <link rel="stylesheet" href="qgis2web_2024_05_18-18_48_51_112228/resources/ol-layerswitcher.css">
+    <link rel="stylesheet" href="qgis2web_2024_05_18-18_48_51_112228/resources/qgis2web.css">
+
+    <title>Sitios Arqueológicos de El Salvador</title>
+</head>
+<body>
+    
+    <nav>
+        <div class="nav-logo">
+            <a href="">
+                <img src="imagenes/nuevoLogo.png">
+            </a>
+        </div>
+
+        <ul class="nav-links">
+            <li class="link"><a href="#">Inicio</a></li>
+            <li id = "link1" class="link"><a href="#"> Descripcion</a></li>
+            <li id = "link2" class="link"><a href="#">Mapa interactivo</a></li>
+            <li id = "link3" class="link"><a href="#">Distribución de sitios arqueologicos</a></li>
+        </ul>
+        
+    </nav>
+
+    <!--
+        Inicio
+    -->
+
+    <header class="container">
+        <div class="content">
+            <span class="blur"></span>
+            <span class="blur"></span>
+            <h4>DESCUBRE CON NOSOTROS</h4>
+            <H1>Lugares <span>arqueológicos</span> de El Salvador</H1>
+            <p>
+                Embarcate en una emocionante aventura conociendo los lugares arqueológicos que puede ofrecerte 
+                nuestro país, El Salvador, visita cada uno de los departamentos que cuentan con estos sitios 
+                arqueológicos y explora la belleza cultural de este hermoso país.
+            </p>
+           
+        </div>
+       
+        <div class="image">
+            <img src="imagenes/mapaElSalvador.png">
+        </div>
+
+    </header>
+
+
+     <!--
+        Cartas
+    -->
+
+    <section class="container">
+        <h2 class="header">DESCRIPCIÓN</h2>
+        <div class="description">
+            <div class="card">
+                <h4>¿Por qué viajar?</h4>
+                <p>
+                    Para descubrir las bellezas del territorio nacional, explorar sus piezas arqueológicas
+                    y descubrir sobre su cultura. <br><br> Conocer sobre el pasado de las civilizaciones que
+                    habitaban estos lugares y enriquecerse de conocimiento. 
+                </p>
+            </div>
+
+            <div class="card">
+                <h4>Análisis</h4>
+                <p>
+                    La posición de estos sitios es producto del asentamiento de las diferentes culturas que habitaron este país, por ejemplo: 
+                    Pipiles, Mayas, Lencas. <br><br> Estos sitios no solo son importantes para la comprensión del pasado precolombino de 
+                    El Salvador, sino que también para la identidad cultural del país.
+                </p>
+            </div>
+
+            <div class="card">
+                <h4>Beneficios de este proyecto</h4>
+                <p>
+                    Promover el desarrollo turístico en el territorio nacional. <br> <br>
+                    Fomentar la conservación y protección del patrimonio cultural. <br> <br>
+                    Impulsar la difusión y promoción de sitios arqueológicos.
+                </p>
+            </div>
+
+            <div class="card">
+                <h4>Un proyecto realizado por</h4>
+                <p>
+                    <br>
+                    <br>
+                    Fernando Adalberto Salinas Pérez
+                    <br>
+                    <br>
+                    Fatima Alexandra Castillo Martinez
+                    <br>
+                    <br>
+                    Ronald Mauricio Hernandez Melendez
+                </p>
+            </div>
+
+        </div>
+        
+    </section>
+    <!--
+        Mapa Interactivo
+    -->
+    <section class="container">
+        <h2 class="header">MAPA INTERACTIVO</h2>
+        <div id="map" style="width: 100%; height: 900px;">
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+    </section>
+
+     <!--
+        Mapa de distribucion
+    -->
+
+    <section class="container">
+
+        <h2 class="header">DISTRIBUCIÓN DE SITIOS ARQUEOLOGICOS EN EL SALVADOR</h2>
+        <div">
+            <img src="imagenes/mapa.jpg"">
+        </div>
+
+    </section>
+
+    <div class="copyright">
+        Copyright © 2024   Fernando Salinas.   Todos los derechos reservados
+    </div>
+
+    <script src="qgis2web_2024_05_18-18_48_51_112228/resources/qgis2web_expressions.js"></script>
+    <script src="qgis2web_2024_05_18-18_48_51_112228/resources/polyfills.js"></script>
+    <script src="qgis2web_2024_05_18-18_48_51_112228/resources/functions.js"></script>
+    <script src="qgis2web_2024_05_18-18_48_51_112228/resources/ol.js"></script>
+    <script src="http://cdn.polyfill.io/v2/polyfill.min.js?features=Element.prototype.classList,URL"></script>
+    <script src="qgis2web_2024_05_18-18_48_51_112228/resources/horsey.min.js"></script>
+    <script src="qgis2web_2024_05_18-18_48_51_112228/resources/ol3-search-layer.js"></script>
+    <script src="qgis2web_2024_05_18-18_48_51_112228/resources/ol-layerswitcher.js"></script>
+    <script src="qgis2web_2024_05_18-18_48_51_112228/layers/raster_columns_1.js"></script>
+    <script src="qgis2web_2024_05_18-18_48_51_112228/layers/sitios_2.js"></script>
+    <script src="qgis2web_2024_05_18-18_48_51_112228/layers/pol_3.js"></script>
+    <script src="qgis2web_2024_05_18-18_48_51_112228/styles/raster_columns_1_style.js"></script>
+    <script src="qgis2web_2024_05_18-18_48_51_112228/styles/sitios_2_style.js"></script>
+    <script src="qgis2web_2024_05_18-18_48_51_112228/styles/pol_3_style.js"></script>
+    <script src="qgis2web_2024_05_18-18_48_51_112228/layers/layers.js" type="text/javascript"></script>
+    <script src="qgis2web_2024_05_18-18_48_51_112228/resources/Autolinker.min.js"></script>
+    <script src="qgis2web_2024_05_18-18_48_51_112228/resources/qgis2web.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
